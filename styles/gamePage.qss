@@ -1,0 +1,14 @@
+QPushButton#card {
+    background-color: transparent; 
+    border: none;
+    border-radius: 20px; 
+}
+QPushButton#gamerCard {
+    background-color: transparent; 
+    border: none;
+    border-radius: 20px; 
+}
+
+QPushButton#gamerCard:hover {
+    border: 2px solid #5640CE;
+}

@@ -1,0 +1,91 @@
+[
+    {
+        "name": "Insertion Sort",
+        "advantages": [
+            "Simple to implement",
+            "Efficient for small data sizes",
+            "Uses little additional memory space"
+        ],
+        "disadvantages": [
+            "Poor performance for large lists (O(n^2))",
+            "Not suitable for large amounts of unsorted data"
+        ],
+        "other": [],
+        "uses": [
+            "Ideal for small or nearly sorted data",
+            "Often used for data added incrementally"
+        ],
+        "complexity": {
+            "best": "O(n)",
+            "worst": "O(n^2)",
+            "average": "O(n^2)",
+            "storage": "O(1)"
+        }
+    },
+    {
+        "name": "Selection Sort",
+        "advantages": [
+            "Simple to implement",
+            "Uses little additional memory space"
+        ],
+        "disadvantages": [
+            "Poor performance in all cases (O(n^2))",
+            "Not stable"
+        ],
+        "other": [],
+        "uses": [
+            "Useful for small lists",
+            "Preferred when swaps are costly"
+        ],
+        "complexity": {
+            "best": "O(n^2)",
+            "worst": "O(n^2)",
+            "average": "O(n^2)",
+            "storage": "O(1)"
+        }
+    },
+    {
+        "name": "Bubble Sort",
+        "advantages": [
+            "Simple to understand and implement",
+            "Used for already sorted lists"
+        ],
+        "disadvantages": [
+            "Poor performance, especially in the worst case (O(n^2))",
+            "Not stable"
+        ],
+        "other": [],
+        "uses": [
+            "Mainly used for educational purposes",
+            "Suitable for very small lists"
+        ],
+        "complexity": {
+            "best": "O(n)",
+            "worst": "O(n^2)",
+            "average": "O(n^2)",
+            "storage": "O(1)"
+        }
+    },
+    {
+        "name": "Quick Sort",
+        "advantages": [
+            "Very fast on average (O(n log n))",
+            "Efficient for large lists"
+        ],
+        "disadvantages": [
+            "Performance can degrade in the worst case (O(n^2))",
+            "Not stable"
+        ],
+        "other": [],
+        "uses": [
+            "Used as the default sorting algorithm",
+            "Good for applications requiring high performance"
+        ],
+        "complexity": {
+            "best": "O(n log n)",
+            "worst": "O(n^2)",
+            "average": "O(n log n)",
+            "storage": "O(log n) (in-place)"
+        }
+    }
+]

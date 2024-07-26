@@ -1,0 +1,25 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource prefix="/">
+		<!-- Images -->
+		
+		<file prefix="images">images/rockGamer.png</file>
+		<file prefix="images">images/paperGamer.png</file>
+		<file prefix="images">images/scissorsGamer.png</file>
+		
+		<file prefix="images">images/rockComputer.png</file>
+		<file prefix="images">images/paperComputer.png</file>
+		<file prefix="images">images/scissorsComputer.png</file>
+
+		<!-- Styles -->
+		<file prefix="styles">styles/mainWindow.qss</file>
+		<file prefix="styles">styles/welcomePage.qss</file>
+		<file prefix="styles">styles/gamePage.qss</file>
+		<file prefix="styles">styles/bankPage.qss</file>
+		<file prefix="styles">styles/sortPage.qss</file>
+
+		<!-- Resources -->
+		<file prefix="resources">resources/algorithms.txt</file>
+		<file prefix="resources">resources/algorithms.json</file>
+	</qresource>
+</RCC>
