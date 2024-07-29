@@ -19,7 +19,6 @@
 		<file prefix="styles">styles/sortPage.qss</file>
 
 		<!-- Resources -->
-		<file prefix="resources">resources/algorithms.txt</file>
 		<file prefix="resources">resources/algorithms.json</file>
 	</qresource>
 </RCC>
