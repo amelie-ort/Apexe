@@ -5,7 +5,6 @@
 #include "sources/insertion_sort/InsertionSort.h" 
 #include "sources/selection_sort/SelectionSort.h"
 #include "sources/bubble_sort/BubbleSort.h"
-#include "sources/merge_sort/MergeSort.h"
 #include "sources/quick_sort/QuickSort.h"
 
 Sort* SortPage::createSortWidget(const QJsonObject& algorithm)
