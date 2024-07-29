@@ -11,16 +11,13 @@
 #include <string>
 
 #include "../page/Page.h"
-
 #include "ui_BankPage.h"
 #include "source/bank/Bank.h"
 #include "../../util/widgets/Widgets.h"
 
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class BankPage; }
 QT_END_NAMESPACE
-
 
 class BankPage : public Page
 {
@@ -34,6 +31,9 @@ private:
     Ui::BankPage* ui;
     Bank* bank;
     void initializeUI();
+
+    QLabel* createBankAccountTitle(BankAccount* account);
+    QWidget* createTransactionWidget(Transaction* transaction, std::unordered_map<int, QVBoxLayout*>& accountLayouts);
 
 private slots:
     void updateUI();

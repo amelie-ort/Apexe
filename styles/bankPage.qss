@@ -1,0 +1,28 @@
+#top {
+    border: none;
+}
+
+#unprocessTransaction {
+    border: 2px solid #cc0000;
+}
+
+#activeTransaction {
+    border: 2px solid #00cc00;
+}
+
+#transactionProcessed {
+    border: 2px solid #0000cc;
+}
+
+#transaction {
+    min-width: 200px;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+QLabel#bankAccountTitle {
+    qproperty-alignment: 'AlignHCenter';
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;  
+}

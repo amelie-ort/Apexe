@@ -27,3 +27,33 @@ QLabel#title {
     border-radius: 8px;               
     padding: 20px;                       
 }
+
+QScrollBar:horizontal {
+    border: none;
+    background: #f0f0f0;
+    height: 5px; 
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #888; 
+    min-width: 30px; 
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    border: none;
+    background: #f0f0f0;
+    width: 0px; 
+}
+
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    border: none;
+    width: 0px;
+    height: 0px;
+    background: none;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}

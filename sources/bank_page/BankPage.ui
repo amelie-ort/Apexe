@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="mainLayout">
    <item>
     <layout class="QHBoxLayout" name="top">
      <item>
@@ -39,13 +39,34 @@
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="unprocessTransaction"/>
+    <widget class="QScrollArea" name="scrollAreaUnprocessTransaction">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetUnprocessTransaction">
+      <layout class="QHBoxLayout" name="unprocessTransaction"/>
+     </widget>
+    </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="activeTransaction"/>
+    <widget class="QScrollArea" name="scrollAreaActiveTransaction">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetActiveTransaction">
+      <layout class="QHBoxLayout" name="activeTransaction"/>
+     </widget>
+    </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="transactionProcessed"/>
+    <widget class="QScrollArea" name="scrollAreaTransactionProcessed">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetTransactionProcessed">
+      <layout class="QHBoxLayout" name="transactionProcessed"/>
+     </widget>
+    </widget>
    </item>
   </layout>
  </widget>
