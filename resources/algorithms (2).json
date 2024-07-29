@@ -1,0 +1,547 @@
+[
+    {
+      "name": "Tri par insertion (Insertion Sort)",
+      "avantages": [
+        "Simple � impl�menter",
+        "Efficace pour les petites tailles de donn�es",
+        "Utilise peu d'espace m�moire suppl�mentaire"
+      ],
+        "disadvantages": [
+            "Performance m�diocre pour de grandes listes (O(n�))",
+            "Non adapt� pour les grandes quantit�s de donn�es non tri�es"
+        ],
+      "other": [],"uses": [
+        "Id�al pour des donn�es de petite taille ou presque tri�es",
+        "Souvent utilis� pour des donn�es ajout�es progressivement"
+      ],
+      "complexity": {
+        "best": "O(n)",
+        "worst": "O(n�)",
+        "average": "O(n�)",
+        "storage": "O(1)"
+      }
+    },
+    {
+      "name": "Tri par s�lection (Selection Sort)",
+      "avantages": [
+        "Simple � impl�menter",
+        "Utilise peu d'espace m�moire suppl�mentaire"
+      ],
+      "disadvantages": [
+        "Performance m�diocre dans tous les cas (O(n�))",
+        "Non stable"
+      ],
+      "other": [],"uses": [
+        "Utile pour des listes de petites tailles",
+        "Pr�f�r� lorsque les �changes sont co�teux"
+      ],
+      "complexity": {
+        "best": "O(n�)",
+        "worst": "O(n�)",
+        "average": "O(n�)",
+        "storage": "O(1)"
+      }
+    },
+    {
+      "name": "Tri � bulles (Bubble Sort)",
+      "avantages": [
+        "Simple � comprendre et � impl�menter",
+        "Utilis� pour des listes d�j� tri�es"
+      ],
+      "disadvantages": [
+        "Performance m�diocre, particuli�rement dans le pire cas (O(n�))",
+        "Non stable"
+      ],
+      "other": [],"uses": [
+        "Principalement utilis� � des fins p�dagogiques",
+        "Adapt� pour de tr�s petites listes"
+      ],
+      "complexity": {
+        "best": "O(n)",
+        "worst": "O(n�)",
+        "average": "O(n�)",
+        "storage": "O(1)"
+      }
+    },
+    {
+      "name": "Tri par fusion (Merge Sort)",
+      "avantages": [
+        "Efficace pour de grandes listes",
+        "Stable",
+        "Performant dans le pire cas (O(n log n))"
+      ],
+      "disadvantages": [
+        "Utilise plus de m�moire suppl�mentaire (O(n) pour la fusion)"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque la stabilit� et la performance sont essentielles",
+        "Adapt� pour des listes cha�n�es"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(n) (non in-place)"
+      }
+    },
+    {
+      "name": "Tri rapide (Quick Sort)",
+      "avantages": [
+        "Tr�s rapide en average (O(n log n))",
+        "Efficace pour de grandes listes"
+      ],
+      "disadvantages": [
+        "Performance peut d�grader au pire cas (O(n�))",
+        "Non stable"
+      ],
+      "other": [],"uses": [
+        "Utilis� comme algorithme de tri par d�faut",
+        "Bon pour les applications n�cessitant une performance �lev�e"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n�)",
+        "average": "O(n log n)",
+        "storage": "O(log n) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par comptage (Counting Sort)",
+      "avantages": [
+        "Efficace pour des intervalles de valeurs sp�cifiques",
+        "Stable"
+      ],
+      "disadvantages": [
+        "N�cessite une large plage de valeurs ou un espace m�moire suppl�mentaire si les valeurs sont dispers�es"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque les donn�es sont dans un intervalle limit� de valeurs enti�res positives"
+      ],
+      "complexity": {
+        "best": "O(n + k), o� k est la plage de valeurs",
+        "worst": "O(n + k)",
+        "average": "O(n + k)",
+        "storage": "O(n + k)"
+      }
+    },
+    {
+      "name": "Tri par base (Radix Sort)",
+      "avantages": [
+        "Efficace pour trier des nombres entiers",
+        "Stable"
+      ],
+      "disadvantages": [
+        "N�cessite que les donn�es soient repr�sent�es en format num�rique"
+      ],
+      "other": [],"uses": [
+        "Utilis� pour trier des entiers de longueur fixe"
+      ],
+      "complexity": {
+        "best": "O(n * k), o� k est le nombre de chiffres",
+        "worst": "O(n * k)",
+        "average": "O(n * k)",
+        "storage": "O(n + k)"
+      }
+    },
+    {
+      "name": "Tri par tas (Heap Sort)",
+      "avantages": [
+        "Efficace en pratique",
+        "O(1) espace suppl�mentaire"
+      ],
+      "disadvantages": [
+        "Non stable"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque des op�rations de recherche parmi les plus grands ou plus petits �l�ments sont n�cessaires"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par pigeon (Pigeonhole Sort)",
+      "avantages": [
+        "Efficace pour les donn�es avec un petit intervalle de valeurs"
+      ],
+      "disadvantages": [
+        "Ne fonctionne que pour des ensembles de donn�es sp�cifiques"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque toutes les donn�es sont dans un petit intervalle entier"
+      ],
+      "complexity": {
+        "best": "O(n + N), o� N est la diff�rence entre la plus grande et la plus petite valeur dans l'ensemble",
+        "worst": "O(n + N)",
+        "average": "O(n + N)",
+        "storage": "O(n + N)"
+      }
+    },
+    {
+      "name": "Tri par permutation (Permutation Sort)",
+      "avantages": [
+        "Stable"
+      ],
+      "disadvantages": [
+        "Co�t �lev� en temps et en m�moire"
+      ],
+      "other": [],"uses": [
+        "Utilis� pour trier des permutations d'objets"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n!)",
+        "average": "O(n!)",
+        "storage": "O(n!)"
+      }
+    },
+    {
+      "name": "Tri gnome (Gnome Sort)",
+      "avantages": [
+        "Simple � impl�menter",
+        "Peut �tre adapt� pour trier en place"
+      ],
+      "disadvantages": [
+        "Performance m�diocre pour les grandes listes non tri�es (O(n�) dans le pire cas)"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque la m�moire suppl�mentaire est limit�e"
+      ],
+      "complexity": {
+        "best": "O(n)",
+        "worst": "O(n�)",
+        "average": "O(n�)",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par peigne (Comb Sort)",
+      "avantages": [
+        "Am�lioration du tri � bulles avec un meilleur taux de convergence"
+      ],
+      "disadvantages": [
+        "Non stable"
+      ],
+      "other": [],"uses": [
+        "Utilis� comme alternative au tri � bulles lorsque la performance est cruciale"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n�)",
+        "average": "O(n�)",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri shell (Shell Sort)",
+      "avantages": [
+        "Efficace pour des listes de taille average"
+      ],
+      "disadvantages": [
+        "Complexit� d'impl�mentation variable"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque la performance des algorithmes de tri simples est insuffisante"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "d�pend de l'intervalle de s�quence utilis�",
+        "average": "d�pend de l'intervalle de s�quence utilis�",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri boustroph�don (Cocktail Shaker Sort)",
+      "avantages": [
+        "Variant du tri � bulles am�lior�"
+      ],
+      "disadvantages": [
+        "Performance m�diocre pour les grandes listes non tri�es"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque des am�liorations sont n�cessaires par rapport au tri � bulles"
+      ],
+      "complexity": {
+        "best": "O(n)",
+        "worst": "O(n�)",
+        "average": "O(n�)",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par insertion binaire (Binary Insertion Sort)",
+      "avantages": [
+        "Am�lioration du tri par insertion pour les grandes listes"
+      ],
+      "disadvantages": [
+        "Performance m�diocre pour les grandes listes non tri�es"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque des am�liorations sont n�cessaires par rapport au tri par insertion"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n�)",
+        "average": "O(n�)",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par r�seau (Network Sort)",
+      "avantages": [
+        "Utilise des comparaisons parall�les"
+      ],
+      "disadvantages": [
+        "Complexit� d'impl�mentation �lev�e"
+      ],
+      "other": [],"uses": [
+        "Utilis� dans des environnements parall�les ou distribu�s"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(n) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par fusion naturelle (Natural Merge Sort)",
+      "avantages": [
+        "Efficace pour des listes partiellement tri�es"
+      ],
+      "disadvantages": [
+        "Complexit� d'impl�mentation plus �lev�e que le tri fusion classique"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque des donn�es partiellement tri�es sont fr�quentes"
+      ],
+      "complexity": {
+        "best": "O(n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(n) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par distribution (Distribution Sort)",
+      "avantages": [
+        "Efficace pour trier des �l�ments distribu�s sur une plage de valeurs"
+      ],
+      "disadvantages": [
+        "N�cessite une distribution uniforme des donn�es"
+      ],
+      "other": [],"uses": [
+        "Utilis� pour trier des donn�es avec une r�partition connue ou pr�visible"
+      ],
+      "complexity": {
+        "best": "O(n)",
+        "worst": "O(n)",
+        "average": "O(n)",
+        "storage": "O(n + k)"
+      }
+    },
+    {
+      "name": "Tri par bloc (Block Sort)",
+      "avantages": [
+        "Tri par fusion adapt� � des blocs de donn�es"
+      ],
+      "disadvantages": [
+        "N�cessite un pr�-traitement pour partitionner les donn�es en blocs"
+      ],
+      "other": [],"uses": [
+        "Utilis� pour trier de grandes quantit�s de donn�es en m�moire limit�e"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(n) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par gravit� (Gravity Sort)",
+      "avantages": [
+        "Utilise un mod�le de gravit� pour trier des �l�ments"
+      ],
+      "disadvantages": [
+        "Complexit� d'impl�mentation �lev�e"
+      ],
+      "other": [],"uses": [
+        "Utilis� pour trier des donn�es structur�es ou bas�es sur un mod�le physique"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(n) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par tas binaire (Binary Heap Sort)",
+      "avantages": [
+        "Utilise une structure de tas binaire pour trier les donn�es"
+      ],
+      "disadvantages": [
+        "Non stable"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque des op�rations de tas binaire sont n�cessaires pendant le tri"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par tas ternaire (Ternary Heap Sort)",
+      "avantages": [
+        "Utilise une structure de tas ternaire pour trier les donn�es"
+      ],
+      "disadvantages": [
+        "Non stable"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque des op�rations de tas ternaire sont n�cessaires pendant le tri"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par tas Fibonacci (Fibonacci Heap Sort)",
+      "avantages": [
+        "Utilise une structure de tas Fibonacci pour trier les donn�es"
+      ],
+      "disadvantages": [
+        "Non stable",
+        "Complexit� d'impl�mentation �lev�e"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque des op�rations de tas Fibonacci sont n�cessaires pendant le tri"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri par permutation rapide (QuickPerm Sort)",
+      "avantages": [
+        "Utilise des permutations pour trier les �l�ments"
+      ],
+      "disadvantages": [
+        "Co�t �lev� en temps et en m�moire"
+      ],
+      "other": [],"uses": [
+        "Utilis� pour trier des permutations d'objets"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n!)",
+        "average": "O(n!)",
+        "storage": "O(n!)"
+      }
+    },
+    {
+      "name": "Tri � peigne bidirectionnel (Bidirectional Comb Sort)",
+      "avantages": [
+        "Am�lioration du tri � peigne avec une direction bidirectionnelle"
+      ],
+      "disadvantages": [
+        "Non stable"
+      ],
+      "other": [],"uses": [
+        "Utilis� lorsque des am�liorations sont n�cessaires par rapport au tri � peigne"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n�)",
+        "average": "O(n�)",
+        "storage": "O(1) (in-place)"
+      }
+    },
+    {
+      "name": "Tri tim (Tim Sort)",
+      "avantages": [
+        "Utilise une combinaison de tri fusion et d'insertion",
+        "Efficace pour des donn�es r�elles et al�atoires"
+      ],
+      "disadvantages": [
+        "Complexit� d'impl�mentation plus �lev�e"
+      ],
+      "other": [],"uses": [
+        "Utilis� comme algorithme de tri standard en Python et Java"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n log n)",
+        "average": "O(n log n)",
+        "storage": "O(n) (in-place)"
+      }
+    },
+    {
+      "name": "Tri flash (Flash Sort)",
+      "avantages": [
+        "Utilise une m�thode de partitionnement pour trier rapidement les donn�es"
+      ],
+      "disadvantages": [
+        "N�cessite une distribution uniforme des donn�es"
+      ],
+      "other": [],"uses": [
+        "Utilis� pour trier des donn�es avec une r�partition connue ou pr�visible"
+      ],
+      "complexity": {
+        "best": "O(n)",
+        "worst": "O(n�)",
+        "average": "O(n log n)",
+        "storage": "O(n) (in-place)"
+      }
+    },
+    {
+      "name": "Tri fr�n�tique (Frantic Sort)",
+      "avantages": [
+        "Utilise une m�thode de tri efficace pour des donn�es sp�cifiques"
+      ],
+      "disadvantages": [
+        "Non stable",
+        "Complexit� d'impl�mentation variable"
+      ],
+      "other": [],"uses": [
+        "Utilis� pour des cas sp�cifiques o� d'autres algorithmes ne sont pas appropri�s"
+      ],
+      "complexity": {
+        "best": "d�pend de l'algorithme sp�cifique",
+        "worst": "d�pend de l'algorithme sp�cifique",
+        "average": "d�pend de l'algorithme sp�cifique",
+        "storage": "d�pend de l'algorithme sp�cifique"
+      }
+    },
+    {
+      "name": "Tri par pancake (Pancake Sort)",
+      "avantages": [
+        "Utilise des retournements pour trier les �l�ments"
+      ],
+      "disadvantages": [
+        "Co�t �lev� en temps (O(n�))"
+      ],
+      "other": [],"uses": [
+        "Utilis� pour trier des permutations d'objets"
+      ],
+      "complexity": {
+        "best": "O(n log n)",
+        "worst": "O(n�)",
+        "average": "O(n�)",
+        "storage": "O(1) (in-place)"
+      }
+    }
+  ]

@@ -20,6 +20,9 @@ Sort* SortPage::createSortWidget(const QJsonObject& algorithm)
     else if (algorithm["name"].toString() == "Bubble Sort") {
         sortWidget = new BubbleSort(this, algorithm);
     }
+    else if (algorithm["name"].toString() == "Merge Sort") {
+        sortWidget = new MergeSort(this, algorithm);
+    }
     else if (algorithm["name"].toString() == "Quick Sort") {
         sortWidget = new QuickSort(this, algorithm);
     }

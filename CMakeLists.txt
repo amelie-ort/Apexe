@@ -60,6 +60,8 @@ add_executable (Apexe
 	"sources/sort_page/sources/bubble_sort/BubbleSort.cpp" 
 	"sources/sort_page/sources/quick_sort/QuickSort.h" 
 	"sources/sort_page/sources/quick_sort/QuickSort.cpp"
+	"sources/sort_page/sources/merge_sort/MergeSort.h" 
+	"sources/sort_page/sources/merge_sort/MergeSort.cpp" 
 	"sources/bank_page/BankPage.h" 
 	"sources/bank_page/BankPage.cpp" 
 	"sources/bank_page/source/bank/Bank.h" 

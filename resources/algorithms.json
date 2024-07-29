@@ -67,6 +67,28 @@
         }
     },
     {
+        "name": "Merge Sort",
+        "advantages": [
+            "Efficient for large lists",
+            "Stable",
+            "Performs well in the worst case (O(n log n))"
+        ],
+        "disadvantages": [
+            "Uses more additional memory (O(n) for merging)"
+        ],
+        "other": [],
+        "uses": [
+            "Used when stability and performance are essential",
+            "Suitable for linked lists"
+        ],
+        "complexity": {
+            "best": "O(n log n)",
+            "worst": "O(n log n)",
+            "average": "O(n log n)",
+            "storage": "O(n) (non in-place)"
+        }
+    },
+    {
         "name": "Quick Sort",
         "advantages": [
             "Very fast on average (O(n log n))",
