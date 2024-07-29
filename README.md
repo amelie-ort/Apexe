@@ -70,6 +70,7 @@ En raison de l'incertitude du temps qu'il restait pour réaliser ce projet avant
 - Amélioration de la documentation et des commentaires pour améliorer la clarté et faciliter la compréhension du code
 - Identification et résolution des avertissements (warnings) générés par le compilateur
 - Mise en place d'un environnement de développement plus fonctionnel, incluant l'intégration d'outils de développement tels que des linters et des outils d'aide à la détection et à la correction des bugs.
+- Ajout de la fonction rejoué dans les tris, ainsi que la correction du bug de lancement anticipé de l'animation si on change de tri alors qu'un tri est déjà en cours.
 
 ## Conclusion
 
