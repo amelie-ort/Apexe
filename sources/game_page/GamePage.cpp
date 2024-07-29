@@ -30,7 +30,7 @@ GamePage::~GamePage()
 
 void GamePage::initializeUI()
 {
-    statusLabel = new QLabel("Choose Rock, Paper, or Scissors:!");
+    statusLabel = new QLabel("Choisissez une pierre, du papier ou des ciseaux:!");
     ui->infoArea->addWidget(statusLabel);
     ui->infoArea->setAlignment(Qt::AlignCenter);
     statusLabel->setObjectName("title");

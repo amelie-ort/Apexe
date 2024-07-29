@@ -59,7 +59,7 @@
    <item alignment="Qt::AlignmentFlag::AlignHCenter">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Bienvenu dans mon application C++</string>
+      <string>Bienvenue dans mon application C++</string>
      </property>
     </widget>
    </item>
@@ -82,7 +82,7 @@
       <item>
        <widget class="QPushButton" name="GameButton">
         <property name="text">
-         <string>Pierre papier cisaux</string>
+         <string>Pierre Papier cisaux</string>
         </property>
        </widget>
       </item>
