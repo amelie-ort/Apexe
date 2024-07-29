@@ -18,9 +18,10 @@ public:
 
     LifeCycle getLifeCycle() const;
     int getIdentifier() const;
-    std::string getAccounts() const;
 
-
+    int getIssuingAccountIdentifier() const;
+    int getReceivingAccountIdentifier() const;
+    double getAmount() const;
 
 private:
     int m_identifier;

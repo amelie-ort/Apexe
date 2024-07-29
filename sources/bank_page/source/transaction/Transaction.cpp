@@ -14,17 +14,18 @@ Transaction::~Transaction() {
 
 void Transaction::execute() {
     m_life_cycle = WAINTING_WITHDRAWAL;
-    m_issuingAccount.withdraw(m_amount);
-    m_life_cycle = WITHDRAWAL;
-
     std::this_thread::sleep_for(std::chrono::seconds(3));
+
+    m_life_cycle = WITHDRAWAL;
+    m_issuingAccount.withdraw(m_amount);
 
     m_life_cycle = WAINTING_DEPOSIT;
-    m_receivingAccount.deposit(m_amount);
-    m_life_cycle = DEPOSIT;
-
     std::this_thread::sleep_for(std::chrono::seconds(3));
 
+
+    m_life_cycle = DEPOSIT;
+    m_receivingAccount.deposit(m_amount);
+    
     m_life_cycle = TRANSACTION_END;
 }
 
@@ -40,9 +41,15 @@ void Transaction::start() {
     m_thread = std::thread(&Transaction::execute, this);
 }
 
-std::string Transaction::getAccounts() const{
-    return " From: " + 
-        std::to_string(m_issuingAccount.getIdentifier()) +
-        " To: " +
-        std::to_string(m_receivingAccount.getIdentifier());
+
+int Transaction::getIssuingAccountIdentifier() const{
+    return m_issuingAccount.getIdentifier();   
+}
+
+int Transaction::getReceivingAccountIdentifier() const{
+    return m_receivingAccount.getIdentifier() ; 
+}
+
+double Transaction::getAmount() const {
+    return m_amount;
 }

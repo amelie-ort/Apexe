@@ -2,15 +2,19 @@
 #define BANK_H
 
 #include <vector>
+#include <QObject>
 #include <mutex>
 #include <thread>
 #include <iostream>
 #include <unordered_map>
+
 #include "../transaction_generator/TransactionGenerator.h"
 #include "../transaction/Transaction.h"
 #include "../bank_account/BankAccount.h"
 
-class Bank {
+class Bank : public QObject {
+    Q_OBJECT
+
 public:
     Bank();
     ~Bank();
@@ -18,6 +22,12 @@ public:
     void start();
     void stop();
     void createAccounts(int numAccounts);
+
+    std::unordered_map<int, Transaction*> getTransactions();
+    std::vector<BankAccount*> getAccounts();
+
+signals:
+    void transactionsUpdated();
 
 private:
     TransactionGenerator m_transactionGenerator;
