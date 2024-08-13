@@ -23,7 +23,7 @@ void TransactionGenerator::generateTransactions() {
     }
 
     std::default_random_engine generator;
-    std::uniform_int_distribution<int> sleep_distribution(5, 15);
+    std::uniform_int_distribution<int> sleep_distribution(3, 9);
     std::uniform_int_distribution<int> account_distribution(0, m_accounts.size() - 1);
     std::uniform_int_distribution<int> amount_distribution(1, 100);
 
